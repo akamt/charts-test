@@ -12,9 +12,11 @@
     "test-all": "npx yarn-run-all lint check-types format lint:fix"
   },
   "dependencies": {
+    "fusioncharts": "^3.17.0",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-fusioncharts": "^3.1.2",
     "react-is": "^17.0.2",
     "styled-components": "^5.2.3"
   },
