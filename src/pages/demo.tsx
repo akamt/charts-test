@@ -18,6 +18,12 @@ const SpGraph = dynamic(() => import('../components/demo/sp'), {
 const StayStatusGraph = dynamic(() => import('../components/demo/stayStatus'), {
   ssr: false,
 })
+const LeadTimeAndSpGraph = dynamic(
+  () => import('../components/demo/leadTimeAndSp'),
+  {
+    ssr: false,
+  },
+)
 
 const Container = styled.div`
   width: 100vw;
@@ -35,6 +41,7 @@ const DemoPage = () => (
     <MergesGraph />
     <SpGraph />
     <StayStatusGraph />
+    <LeadTimeAndSpGraph />
   </Container>
 )
 
