@@ -9,6 +9,9 @@ const PostsZoomLineGraph = dynamic(
     ssr: false,
   },
 )
+const MergesGraph = dynamic(() => import('../components/demo/merges'), {
+  ssr: false,
+})
 
 const Container = styled.div`
   width: 100vw;
@@ -23,6 +26,7 @@ const DemoPage = () => (
   <Container>
     <PostsLineGraph />
     <PostsZoomLineGraph />
+    <MergesGraph />
   </Container>
 )
 
