@@ -7,9 +7,10 @@ import FusionCharts from 'fusioncharts'
 // Step 3 - Including the fusiontime file
 import TimeSeries from 'fusioncharts/fusioncharts.timeseries'
 import ReactFC from 'react-fusioncharts'
+import ExcelExport from 'fusioncharts/fusioncharts.excelexport'
 
 // Step 4 - Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, TimeSeries)
+ReactFC.fcRoot(FusionCharts, TimeSeries, ExcelExport)
 
 // Step 5 - Creating the JSON object to store the chart configurations
 const dataFetch = () =>
@@ -24,9 +25,13 @@ const schemaFetch = () =>
 const graphConfig = {
   type: 'timeseries',
   renderAt: 'container',
-  width: '600',
-  height: '400',
+  width: 650,
+  height: 400,
   dataSource: {
+    chart: {
+      exportEnabled: 1,
+      exportAtClientSide: 1,
+    },
     caption: { text: 'Online Sales of a SuperStore in the US' },
     data: {},
     yAxis: [

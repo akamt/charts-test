@@ -1,6 +1,7 @@
 import FusionCharts from 'fusioncharts'
 import Column2D from 'fusioncharts/fusioncharts.charts'
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion.js'
+import ExcelExport from 'fusioncharts/fusioncharts.excelexport'
 import ReactFusionCharts from 'react-fusioncharts'
 
 const dataSource = {
@@ -11,6 +12,8 @@ const dataSource = {
     yAxisName: 'Reserves (MMbbl)',
     numberSuffix: 'K',
     theme: 'fusion',
+    exportEnabled: 1,
+    exportAtClientSide: 1,
   },
   data: [
     { label: 'Venezuela', value: '290' },
@@ -33,7 +36,7 @@ const chartConfigs = {
 }
 
 export default function Column2DGraph() {
-  ReactFusionCharts.fcRoot(FusionCharts, Column2D, FusionTheme)
+  ReactFusionCharts.fcRoot(FusionCharts, Column2D, FusionTheme, ExcelExport)
 
   return <ReactFusionCharts {...chartConfigs} />
 }
