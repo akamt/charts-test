@@ -1,3 +1,8 @@
+import FusionCharts from 'fusioncharts'
+import Column2D from 'fusioncharts/fusioncharts.charts'
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion.js'
+import ReactFusionCharts from 'react-fusioncharts'
+
 const dataSource = {
   chart: {
     caption: 'Countries With Most Oil Reserves [2017-18]',
@@ -27,13 +32,8 @@ const chartConfigs = {
   dataSource: dataSource,
 }
 
-export default function NextFC() {
-  const FusionCharts = require('fusioncharts')
-  const Column2D = require('fusioncharts/fusioncharts.charts')
-  const FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion.js')
-  const { default: ReactFC } = require('react-fusioncharts')
+export default function Column2DGraph() {
+  ReactFusionCharts.fcRoot(FusionCharts, Column2D, FusionTheme)
 
-  ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme)
-
-  return <ReactFC {...chartConfigs} />
+  return <ReactFusionCharts {...chartConfigs} />
 }
