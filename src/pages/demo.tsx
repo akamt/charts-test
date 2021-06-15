@@ -15,6 +15,9 @@ const MergesGraph = dynamic(() => import('../components/demo/merges'), {
 const SpGraph = dynamic(() => import('../components/demo/sp'), {
   ssr: false,
 })
+const StayStatusGraph = dynamic(() => import('../components/demo/stayStatus'), {
+  ssr: false,
+})
 
 const Container = styled.div`
   width: 100vw;
@@ -31,6 +34,7 @@ const DemoPage = () => (
     <PostsZoomLineGraph />
     <MergesGraph />
     <SpGraph />
+    <StayStatusGraph />
   </Container>
 )
 
