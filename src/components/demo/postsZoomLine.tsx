@@ -52,7 +52,7 @@ const GraphContainer = styled.div`
   box-sizing: border-box;
 `
 
-export default function PostsGraph() {
+export default function PostsZoomLineGraph() {
   ReactFusionCharts.fcRoot(FusionCharts, ZoomLine, FusionTheme, ExcelExport)
 
   return (

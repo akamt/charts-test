@@ -80,7 +80,7 @@ const GraphContainer = styled.div`
   box-sizing: border-box;
 `
 
-export default function PostsGraph() {
+export default function SpGraph() {
   ReactFusionCharts.fcRoot(FusionCharts, Column2D, FusionTheme, ExcelExport)
 
   return (
