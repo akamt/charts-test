@@ -24,6 +24,12 @@ const LeadTimeAndSpGraph = dynamic(
     ssr: false,
   },
 )
+const SpAndDigestionRateGraph = dynamic(
+  () => import('../components/demo/spAndDigestionRate'),
+  {
+    ssr: false,
+  },
+)
 
 const Container = styled.div`
   width: 100vw;
@@ -42,6 +48,7 @@ const DemoPage = () => (
     <SpGraph />
     <StayStatusGraph />
     <LeadTimeAndSpGraph />
+    <SpAndDigestionRateGraph />
   </Container>
 )
 
