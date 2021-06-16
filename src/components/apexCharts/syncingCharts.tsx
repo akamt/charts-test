@@ -7,9 +7,9 @@ function generateDayWiseTimeSeries(
   yRange: { min: number; max: number },
 ) {
   let i = 0
-  let series = []
+  const series = []
   while (i < count) {
-    let y =
+    const y =
       Math.floor(Math.random() * (yRange.max - yRange.min + 1)) + yRange.min
 
     series.push([baseVal, y])
