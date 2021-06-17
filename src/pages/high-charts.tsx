@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import MyStockChart from '../components/highCharts/MyStockChart'
+import AppleStockChart from '../components/highCharts/AppleStockChart'
+import PostsStockChart from '../components/highCharts/postStock'
 
 const Container = styled.div`
   width: 100vw;
@@ -14,7 +15,8 @@ const Container = styled.div`
 const HighChartsPage = () => {
   return (
     <Container>
-      <MyStockChart />
+      <AppleStockChart />
+      <PostsStockChart />
     </Container>
   )
 }
