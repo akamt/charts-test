@@ -28,7 +28,7 @@ const options = {
         enabled: true,
         linkTextPath: {
           attributes: {
-            dy: 10,
+            dy: 12,
           },
         },
         linkFormat: '{point.fromNode.name} \u2192 {point.toNode.name}',
@@ -37,7 +37,7 @@ const options = {
           attributes: {
             dy: 14,
             startOffset: '45%',
-            textLength: 30,
+            textLength: 80,
           },
         },
         format: 'Node: {point.name}',
