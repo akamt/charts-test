@@ -4,7 +4,7 @@ import AppleStockChart from '../components/highCharts/AppleStockChart'
 import PostsStockChart from '../components/highCharts/postStock'
 import NetworkChart from '../components/highCharts/networkChart'
 import SyncingChart from '../components/highCharts/syncingChart'
-import Highcharts from 'highcharts'
+import Highcharts from 'highcharts/highstock'
 
 if (typeof Highcharts === 'object') {
   Highcharts.Pointer.prototype.reset = () => {}
