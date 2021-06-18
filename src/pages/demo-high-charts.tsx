@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import MergesChart from '../components/highCharts/mergesChart'
 import TotalSpChart from '../components/highCharts/totalSpChart'
+import DigestionSpChart from '../components/highCharts/digestionSpChart'
 import Highcharts from 'highcharts'
 
 if (typeof Highcharts === 'object') {
@@ -74,6 +75,7 @@ const DemoHighChartsPage = () => {
     <Container onMouseMove={handleMouseMove}>
       <MergesChart />
       <TotalSpChart />
+      <DigestionSpChart />
     </Container>
   )
 }
