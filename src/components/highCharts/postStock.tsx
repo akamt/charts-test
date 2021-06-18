@@ -8,6 +8,7 @@ import ema from 'highcharts/indicators/ema'
 import dema from 'highcharts/indicators/dema'
 import HighchartsReact from 'highcharts-react-official'
 import styled from 'styled-components'
+import { AxisSetExtremesEventObject } from 'highcharts'
 
 if (typeof Highcharts === 'object') {
   HighchartsExporting(Highcharts)
@@ -19,6 +20,9 @@ if (typeof Highcharts === 'object') {
 }
 
 const options = {
+  chart: {
+    zoomType: 'x',
+  },
   title: {
     text: '発言数',
   },
@@ -28,6 +32,13 @@ const options = {
   plotOptions: {
     series: {
       showInLegend: true,
+    },
+  },
+  xAxis: {
+    events: {
+      setExtremes: function (e: AxisSetExtremesEventObject) {
+        Highcharts.syncExtremes(e)
+      },
     },
   },
   series: [

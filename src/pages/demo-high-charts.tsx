@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import AppleStockChart from '../components/highCharts/AppleStockChart'
-import PostsStockChart from '../components/highCharts/postStock'
-import NetworkChart from '../components/highCharts/networkChart'
-import SyncingChart from '../components/highCharts/syncingChart'
-import Highcharts from 'highcharts/highstock'
+import MergesChart from '../components/highCharts/mergesChart'
+import TotalSpChart from '../components/highCharts/totalSpChart'
+import DigestionSpChart from '../components/highCharts/digestionSpChart'
+import CarryOverSpChart from '../components/highCharts/carryOverSpChart'
+import LeadTimeChart from '../components/highCharts/leadTimeChart'
+import Highcharts from 'highcharts'
 
 if (typeof Highcharts === 'object') {
   Highcharts.Pointer.prototype.reset = () => {}
@@ -57,7 +58,7 @@ const Container = styled.div`
   flex-wrap: wrap;
 `
 
-const HighChartsPage = () => {
+const DemoHighChartsPage = () => {
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
     let point = null
     let event = null
@@ -74,12 +75,13 @@ const HighChartsPage = () => {
 
   return (
     <Container onMouseMove={handleMouseMove}>
-      <AppleStockChart />
-      <PostsStockChart />
-      <NetworkChart />
-      <SyncingChart />
+      <MergesChart />
+      <TotalSpChart />
+      <DigestionSpChart />
+      <CarryOverSpChart />
+      <LeadTimeChart />
     </Container>
   )
 }
 
-export default HighChartsPage
+export default DemoHighChartsPage
