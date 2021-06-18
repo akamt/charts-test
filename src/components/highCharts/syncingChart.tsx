@@ -9,11 +9,6 @@ const options1 = {
     type: 'datetime',
     tickWidth: 0,
     tickLength: 0,
-    events: {
-      setExtremes: function (e) {
-        Highcharts.syncExtremes(e)
-      },
-    },
   },
   yAxis: [
     {
@@ -104,11 +99,6 @@ const options2 = {
     type: 'datetime',
     tickWidth: 0,
     tickLength: 0,
-    events: {
-      setExtremes: function (e) {
-        Highcharts.syncExtremes(e)
-      },
-    },
   },
   yAxis: {
     gridLineWidth: 2,
