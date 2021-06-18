@@ -46,7 +46,7 @@ const options = {
   },
   series: [
     {
-      type: 'column',
+      type: 'line',
       name: 'SP',
       data: [18, 20, 26, 33.5, 31, 77, 82.5, 53, 68.5, 57, 76],
     },

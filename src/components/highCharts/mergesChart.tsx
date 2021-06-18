@@ -46,7 +46,7 @@ const options = {
   },
   series: [
     {
-      type: 'column',
+      type: 'line',
       name: 'マージ数',
       data: [28, 36, 15, 16, 52, 32, 19, 32, 37, 29, 0],
     },
