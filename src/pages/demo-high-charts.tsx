@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import MergesChart from '../components/highCharts/mergesChart'
 import TotalSpChart from '../components/highCharts/totalSpChart'
 import DigestionSpChart from '../components/highCharts/digestionSpChart'
+import CarryOverSpChart from '../components/highCharts/carryOverSpChart'
 import Highcharts from 'highcharts'
 
 if (typeof Highcharts === 'object') {
@@ -76,6 +77,7 @@ const DemoHighChartsPage = () => {
       <MergesChart />
       <TotalSpChart />
       <DigestionSpChart />
+      <CarryOverSpChart />
     </Container>
   )
 }
