@@ -4,6 +4,7 @@ import MergesChart from '../components/highCharts/mergesChart'
 import TotalSpChart from '../components/highCharts/totalSpChart'
 import DigestionSpChart from '../components/highCharts/digestionSpChart'
 import CarryOverSpChart from '../components/highCharts/carryOverSpChart'
+import LeadTimeChart from '../components/highCharts/leadTimeChart'
 import Highcharts from 'highcharts'
 
 if (typeof Highcharts === 'object') {
@@ -78,6 +79,7 @@ const DemoHighChartsPage = () => {
       <TotalSpChart />
       <DigestionSpChart />
       <CarryOverSpChart />
+      <LeadTimeChart />
     </Container>
   )
 }
