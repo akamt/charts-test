@@ -69,6 +69,7 @@ const options = {
         { x: 6, text: '実行ログ2', title: 'log2' },
         { x: 10, text: '実行ログ3', title: 'log3' },
       ],
+      showInLegend: false,
     },
   ],
 }
