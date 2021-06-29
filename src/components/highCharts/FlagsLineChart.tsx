@@ -81,7 +81,7 @@ const GraphContainer = styled.div`
   box-sizing: border-box;
 `
 
-const DigestionSpChart = () => {
+const FlagsLineChart = () => {
   return (
     <GraphContainer>
       <HighchartsReact
@@ -93,4 +93,4 @@ const DigestionSpChart = () => {
   )
 }
 
-export default DigestionSpChart
+export default FlagsLineChart

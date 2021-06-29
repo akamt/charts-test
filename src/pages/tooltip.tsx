@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import HighchartsExporting from 'highcharts/modules/exporting'
 import Highcharts from 'highcharts/highstock'
 
-import CustomTooltipChart from '../components/highCharts/CustomTooltipChart'
+import FlagsLineChart from '../components/highCharts/FlagsLineChart'
 
 if (typeof Highcharts === 'object') {
   HighchartsExporting(Highcharts)
@@ -20,7 +20,7 @@ const Container = styled.div`
 
 const CustomTooltipPage = () => (
   <Container>
-    <CustomTooltipChart />
+    <FlagsLineChart />
   </Container>
 )
 
